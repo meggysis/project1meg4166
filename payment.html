@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        form label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input,
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Nanny Daycare Logo">
+            <h1>Fun Phase Daycare</h1>
+        </div>
+        <nav>
+            <!--navigation for page-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="create.html">My Account</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Payment Method</h1>
+        
+        <form action="#" id="paymentForm">
+            payment image
+            <img src="images/payment_method_image.jpg" alt="Payment Method Image" style="max-width: 100%; width: 80%; display: block; margin: 0 auto;">
+
+            <label for="paymentMethod">Select Payment Method:</label>
+            <select id="paymentMethod" onchange="showCreditCardFields()">
+                <option value="paypal">PayPal</option>
+                <option value="creditCard">Credit Card</option>
+            </select>
+
+            <div id="creditCardFields" style="display: none;">
+                <label for="cardType">Card Type:</label>
+                <select id="cardType">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="amex">American Express</option>
+     
+                </select>
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" required>
+                <label for="nameOnCard">Name on Card:</label>
+                <input type="text" id="nameOnCard" required>
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" required>
+                <label for="securityCode">Security Code:</label>
+                <input type="text" id="securityCode" required>
+
+            </div>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Nanny Daycare. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook" width="30" height="30"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter" width="30" height="30"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram" width="30" height="30"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showCreditCardFields() {
+            const paymentMethod = document.getElementById("paymentMethod").value;
+            const creditCardFields = document.getElementById("creditCardFields");
+            if (paymentMethod === "creditCard") {
+                creditCardFields.style.display = "block";
+            } else {
+                creditCardFields.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

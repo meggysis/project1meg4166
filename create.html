@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        form label {
+            display: flex;
+            align-items: center; 
+        }
+
+        form label input[type="checkbox"] {
+            margin-right: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Nanny Daycare Logo">
+            <h1>Fun Phase Daycare</h1>
+        </div>
+        <nav>
+            <!--navigation for page-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="create.html">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Create an Account</h1>
+        <form action="#" id="registrationForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+    
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+    
+            <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletters and event emails</label>
+    
+            <label for="terms"><input type="checkbox" id="terms" name="terms" required> I have read and accept the terms and conditions</label>
+    
+            <button type="submit">Create Account</button>
+        </form>
+    
+        <h2>Login</h2>
+        <form action="#" id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required>
+    
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+    
+            <button type="submit">Login</button>
+        </form>
+    </main>    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Nanny Daycare. All rights reserved.</p>
+
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook" width="30" height="30"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter" width="30" height="30"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram" width="30" height="30"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,273 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5dc; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background-color: #228B22; 
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #f5f5dc; 
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: auto; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5dc; 
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #e0e0c0; 
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #228B22; 
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #228B22; 
+    font-size: 2em;
+    margin-top: 40px;
+    text-align: center;
+}
+
+h3 {
+    color: #006400; 
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+footer {
+    background-color: #228B22;
+    padding: 10px;
+    text-align: center;
+    border-top: 3px solid #006400; 
+    bottom: 0;
+    width: 100%;
+}
+
+
+footer p {
+    margin: 0;
+    color: #f5f5dc; 
+}
+
+footer .social-icons a {
+    color: #f5f5dc;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer .social-icons a:hover {
+    color: #e0e0c0; 
+}
+
+.events {
+    padding: 20px;
+}
+
+.event-category {
+    margin-bottom: 40px;
+}
+
+.event-item {
+    background-color: #f5f5dc;
+    border: 2px solid #228B22; 
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.event-item img {
+    max-width: 200px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-item h3 {
+    margin-top: 10px;
+    color: #228B22; 
+}
+
+.event-item p {
+    color: #333;
+}
+
+.event-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #228B22; 
+    color: #f5f5dc; 
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-item a:hover {
+    background-color: #006400; 
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #228B22; 
+    color: #f5f5dc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    background-color: #006400; 
+}
+
+.subscription-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.subscription-box {
+    background-color: #f5f5dc; 
+    border: 2px solid #228B22; 
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.subscription-box h2 {
+    color: #228B22;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.subscription-box p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.subscription-box button {
+    padding: 10px;
+    background-color: #228B22; 
+    color: #f5f5dc; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.subscription-box button:hover {
+    background-color: #006400;
+}
+
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px; 
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 24px auto;
+}
+
+select:focus {
+    outline: none;
+    border-color: #228B22; 
+    box-shadow: 0 0 0 2px #228B22;
+}
+
